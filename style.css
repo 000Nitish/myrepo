@@ -1,99 +1,42 @@
-
-/* Basic CSS for layout and design */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
-
-.container {
-    display: flex;
+body{
     height: 100vh;
-}
-
-.sidebar {
-    width: 20%;
-    background-color: #2c3e50;
-    color: white;
+    width: 100vh;
+    background-color: seashell;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
-
-.sidebar nav ul {
+li{
     list-style: none;
-    padding: 0;
-}
-
-.sidebar nav ul li {
-    margin: 20px 0;
-}
-
-.sidebar nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: block;
-}
-
-.sidebar nav ul li a:hover {
-    background-color: #34495e;
-    border-radius: 5px;
-}
-
-.main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ecf0f1;
-}
-
-.infocontainer {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.devinfo {
-    max-width: 50%;
-}
-
-.hello {
-    font-size: 24px;
-    color: #2980b9;
-}
-
-.name {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.about {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.buttons {
-    margin-top: 20px;
-}
-
-.buttons a button {
-    background-color: #2980b9;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
 }
-
-.buttons a button:hover {
-    background-color: #3498db;
+a{
+    text-decoration: none;
 }
-
-.devpic img {
-    max-width: 100%;
-    border-radius: 10px;
+button{
+    background-color: rgb(80, 80, 177);
+    cursor: pointer;
+    padding: 4px, 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 600;
+    width: fit-content;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
