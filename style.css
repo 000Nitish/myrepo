@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    width: 100vh;
+    
     background-color: rgb(245, 241, 238);
     display: flex;
     flex-direction: column;
@@ -43,4 +42,29 @@ nav{
 nav .logo{
     font-weight: 700;
     font-size: 30px;
+}
+nav ul{
+    display: flex;
+    
+}
+section{
+    display: flex;
+    padding: 100px;
+}
+.pic{
+    height: 300px;
+    width: 350px;
+    border-radius: 300px;
+    border: 2px solid rgb(194, 170, 125);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 13, 13);
+    color: azure;
+    height: 50px;
+}
+footer ul{
+    display: flex;
 }
