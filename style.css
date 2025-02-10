@@ -7,7 +7,7 @@
 body{
     height: 100vh;
     width: 100vh;
-    background-color: seashell;
+    background-color: rgb(245, 241, 238);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
