@@ -6,7 +6,7 @@
 }
 body{
     
-    background-color: rgb(245, 241, 238);
+    background-color: white
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,6 +34,7 @@ button:hover{
     border: 1px solid black;
 }
 nav{
+    background-color: aliceblue;
     display: flex;
     width: 100%;
     align-items: center;
@@ -45,11 +46,17 @@ nav .logo{
 }
 nav ul{
     display: flex;
-    
+    gap: 30px;
+    align-items: center;
+    font-weight: 500;
 }
 section{
     display: flex;
     padding: 100px;
+    gap: 200px;
+}
+.about{
+    padding: 30px;
 }
 .pic{
     height: 300px;
@@ -57,14 +64,21 @@ section{
     border-radius: 300px;
     border: 2px solid rgb(194, 170, 125);
 }
+.button{
+    text-align: center;
+    justify-content: center;
+}
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(15, 13, 13);
+    background-color: rgb(49, 39, 39);
     color: azure;
-    height: 50px;
+    height: 45px;
+    gap: 10px;
 }
 footer ul{
     display: flex;
+    gap: 10px;
 }
+
