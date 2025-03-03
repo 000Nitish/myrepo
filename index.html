@@ -3,44 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/f37db9d792.js" crossorigin="anonymous"></script>
+    <title>Nitish Kumar - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f37db9d792.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Nitish Kumar</div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Contact</li>
-            </ul>
-            <div>
-                <input type="text" name="" id="" placeholder="Search">
-                <button>Search</button>
-            </div>
-        </nav>
-    </header>
-    <section>
-        <div class="about">
-            <h1>Hello...</h1>
-            <h2>I am a Full Stack Developer</h2>
-            <p>with a strong foundation in front-end and back-end technologies. </p>   
-        </div>
-        <div>
-            <div class="pic"><img src="my-photo.jpeg" alt="unable to download"></div>
-            <div class="button"><button>Chat with us</button></div>
-        </div>
-    </section>
-    <footer>
-        <p>Copyright @2025 Nitish All right reserved</p>
-        <ul>
-            <li><a href=""></a><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/nitish-kumar-106a45244/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Nitish Kumar</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </footer>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </nav>
+</header>
+
+<section id="home" class="hero-section">
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Nitish Kumar</span></h1>
+        <h2>Full Stack Developer</h2>
+        <p>I specialize in creating dynamic web applications and providing innovative solutions.</p>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="hero-image">
+        <img src="nk2.jpeg" alt="Nitish Kumar">
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>I am deeply passionate about technology and problem-solving. My journey in tech has been shaped by curiosity, continuous learning, and a commitment to building meaningful solutions.
+
+        From Student to Tech Enthusiast
+        While pursuing my BCA, I went beyond academics and completed the O Level course in Information Technology from NIELIT (National Institute of Electronics & Information Technology), strengthening my technical foundation. Now, as an MCA (1st Year) student, I am deepening my expertise in C++, Data Structures & Algorithms, and Full Stack Development, preparing myself to contribute to real-world innovations.
+        
+        Industry Experience
+        I worked as a Full Stack Developer Intern at BWJ Tech Solution, where I gained hands-on experience in building scalable applications, problem-solving, and working in a fast-paced development environment. This internship enhanced my ability to write clean, efficient code and collaborate effectively in a team setting.
+        
+        Mission: Growth, Innovation & Impact
+        I am actively seeking a Software Engineer role where I can apply my skills, learn continuously, and contribute to meaningful projects. My ultimate ambition is to work at Microsoft, creating technology that makes a difference.</p>
+</section>
+
+<section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React.js & Node.js</li>
+        <li>PHP & MySQL</li>
+        <li>C++ & DSA</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Nitish Kumar. All Rights Reserved.</p>
+    <div class="social-links">
+        <a href="https://github.com/000Nitish"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nitish-kumar-106a45244/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/_nitish_yadav_0/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
+
 </body>
 </html>

@@ -1,84 +1,183 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-body{
-    
-    background-color: white;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-li{
-    list-style: none;
-    cursor: pointer;
-}
-a{
-    text-decoration: none;
-}
-button{
-    background-color: rgb(80, 80, 177);
-    cursor: pointer;
-    padding: 4px, 10px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 600;
-    width: fit-content;
-}
-button:hover{
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-}
-nav{
-    background-color: aliceblue;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-nav .logo{
-    font-weight: 700;
-    font-size: 30px;
-}
-nav ul{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    font-weight: 500;
-}
-section{
-    display: flex;
-    padding: 100px;
-    gap: 200px;
-}
-.about{
-    padding: 30px;
-}
-.pic{
-    height: 300px;
-    width: 350px;
-    border-radius: 300px;
-    border: 2px solid rgb(194, 170, 125);
-}
-.button{
-    text-align: center;
-    justify-content: center;
-}
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(49, 39, 39);
-    color: azure;
-    height: 45px;
-    gap: 10px;
-}
-footer ul{
-    display: flex;
-    gap: 10px;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    gap: 5px;
+}
+
+.search-box input {
+    padding: 5px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero-content h1 span {
+    color: #ff5722;
+}
+
+.hero-content h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    margin: 10px 0 20px;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Sections */
+section {
+    padding: 50px 30px;
+    background: #fff;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    color: #555;
+}
+
+.skills-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.skills-section li {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-section button {
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .skills-section ul {
+        flex-direction: column;
+    }
+}
