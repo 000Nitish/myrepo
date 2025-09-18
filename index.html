@@ -6,81 +6,307 @@
     <title>Nitish Kumar - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f37db9d792.js" crossorigin="anonymous"></script>
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
+<!-- ✅ Clean & Professional Navbar -->
 <header>
-    <nav class="navbar">
-        <div class="logo">Nitish Kumar</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand fw-bold" href="#">Nitish Kumar</a>
+      <!-- Toggle Button for Mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competitions">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <div class="search-box">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
-        </div>
-    </nav>
+        <!-- Search Box -->
+        <form class="d-flex ms-lg-3">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Search">
+          <button class="btn btn-sm btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 </header>
 
-<section id="home" class="hero-section">
-    <div class="hero-content">
-        <h1>Hello, I'm <span>Nitish Kumar</span></h1>
-        <h2>Full Stack Developer</h2>
+<!-- ✅ Hero Section -->
+<section id="home" class="hero-section bg-light py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Content -->
+      <div class="col-md-7 text-center text-md-start">
+        <!-- Tagline -->
+        <p class="text-uppercase text-primary fw-bold mb-2">
+          Transforming ideas into code, every single day
+        </p>
+        <!-- Name and Profession -->
+        <h3 class="fw-semibold mb-1">Nitish Kumar</h3>
+        <p class="text-muted">Full Stack Developer</p>
         <p>I specialize in creating dynamic web applications and providing innovative solutions.</p>
-        <a href="#contact" class="btn">Contact Me</a>
+        <div class="d-flex flex-column flex-sm-row gap-2 mt-3">
+          <a href="#contact" class="btn">Contact Me</a>
+          <a href="Nitish .pdf" target="_blank" class="btn">View Resume</a>
+        </div>
+      </div>
+      <!-- Right Image + Circular Text -->
+      <div class="col-md-5 text-center mt-4 mt-md-0">
+        <div class="circle-container">
+          <!-- Profile Image -->
+          <img src="profile.jpeg" alt="Nitish Kumar" class="profile-img rounded-circle shadow">
+
+          <!-- Circular Rotating Text (same size as profile border) -->
+          <svg viewBox="0 0 300 300" class="circle-text">
+            <defs>
+              <path id="circlePath"
+                d="M 150, 150
+                   m -130, 0
+                   a 130,130 0 1,1 260,0
+                   a 130,130 0 1,1 -260,0" />
+            </defs>
+            <text font-size="16" font-weight="bold" letter-spacing="4">
+              <textPath href="#circlePath" startOffset="0%">
+                C O D E .   C R E A T E .   L E A R N .   G R O W .   R E P E A T .   A L W A Y S .
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+
     </div>
-    <div class="hero-image">
-        <img src="profile.jpeg" alt="Nitish Kumar">
+  </div>
+</section>
+<!-- ✅ Gradient -->
+<svg width="0" height="0">
+  <defs>
+    <linearGradient id="gradient" gradientTransform="rotate(90)">
+      <stop offset="0%" stop-color="#0d6efd"/>
+      <stop offset="50%" stop-color="#6610f2"/>
+      <stop offset="100%" stop-color="#ff5733"/>
+    </linearGradient>
+  </defs>
+</svg>
+<!-- ✅ Skills Section -->
+<section id="skills" class="skills-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row text-center">
+      
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <i class="fab fa-html5 fa-3x text-danger mb-2"></i>
+          <h5>HTML5 & CSS3</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <i class="fab fa-js-square fa-3x text-warning mb-2"></i>
+          <h5>JavaScript (ES6+)</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <i class="fab fa-react fa-3x text-info mb-2"></i>
+          <h5>React.js & Node.js</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <i class="fas fa-database fa-3x text-success mb-2"></i>
+          <h5>PHP & MySQL</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <i class="fas fa-code fa-3x text-primary mb-2"></i>
+          <h5>C++ & DSA</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card p-3 shadow-sm">
+          <i class="fab fa-github fa-3x text-dark mb-2"></i>
+          <h5>Git & GitHub</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Competitions, Hackathons & Achievements Section -->
+<section id="competitions" class="container py-5">
+  <h2 class="text-center mb-5">Competitions, Hackathons & Achievements</h2>
+  <!-- LeetCode -->
+  <div class="row mb-5 align-items-center">
+    <!-- Left (Text) -->
+    <div class="col-md-6">
+      <div class="card h-100 p-4 shadow-sm d-flex flex-column justify-content-center">
+        <h4 class="mb-3">LeetCode 100 Days Coding Challenge</h4>
+        <p>
+          Completed the <b>100 Days of Code Challenge</b> on <b>LeetCode</b>, 
+          improving problem-solving, data structures, and algorithm skills.  
+          This journey built strong consistency and daily coding discipline.
+        </p>
+        <a href="https://leetcode.com/u/masum_ladka0001/" target="_blank">Click</a>
+      </div>
+    </div>
+    <!-- Right (Image) -->
+    <div class="col-md-6 text-center">
+      <div class="card h-100 p-4 shadow-sm d-flex justify-content-center align-items-center">
+        <img src="leetcode.png" 
+             alt="LeetCode Badge" class="img-fluid" style="max-height:180px; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+
+  <!-- HackerRank -->
+  <div class="row mb-5 align-items-center flex-md-row-reverse">
+    <!-- Left (Text) -->
+    <div class="col-md-6">
+      <div class="card h-100 p-4 shadow-sm d-flex flex-column justify-content-center">
+        <h4 class="mb-3">HackerRank Achievements</h4>
+        <p>
+          Achieved <b>5-Star C++ Coder</b> on HackerRank, 
+          demonstrating strong expertise in programming and problem solving.
+        </p>
+        <a href="https://www.hackerrank.com/profile/nitish9570835823">Click</a>
+      </div>
+    </div>
+    <!-- Right (Image) -->
+    <div class="col-md-6 text-center">
+      <div class="card h-100 p-4 shadow-sm d-flex justify-content-center align-items-center">
+        <img src="hackerrank.png" alt="HackerRank Badge" 
+             class="img-fluid" style="max-height:180px; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Dean's List -->
+  <div class="row mb-5 align-items-center">
+    <!-- Left (Text) -->
+    <div class="col-md-6">
+      <div class="card h-100 p-4 shadow-sm d-flex flex-column justify-content-center">
+        <h4 class="mb-3">Dean’s List (Top 10%)</h4>
+        <p>
+          Proud to be recognized in the <b>Top 10% of Students</b> in my 
+          University’s <b>Dean’s List</b>, reflecting consistent academic 
+          performance and excellence.
+        </p>
+      </div>
+    </div>
+    <!-- Right (Image) -->
+    <div class="col-md-6 text-center">
+      <div class="card h-100 p-4 shadow-sm d-flex justify-content-center align-items-center">
+        <img src="deans.png" 
+             alt="Dean’s List Certificate" class="img-fluid" style="max-height:200px; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="container py-5">
+    <h2 class="text-center mb-4">Experience</h2>
+    <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">Full Stack Developer Intern</h5>
+            <h6 class="card-subtitle mb-2 text-muted">BWJ Tech Solution | Jun 2024 – Jul 2024</h6>
+            <p class="card-text">During my internship as a Full Stack Developer at BWJ Tech Solution, I gained hands-on experience in developing efficient and testable web applications using PHP and MySQL. I actively collaborated in an Agile team environment, contributing to sprint planning and code reviews while ensuring timely delivery of tasks. My responsibilities included implementing backend logic, managing database integration, and designing RESTful APIs for smooth data handling and scalability. On the front end, I worked with Bootstrap and JavaScript to create responsive and user-friendly interfaces. This internship not only strengthened my technical expertise but also improved my problem-solving, debugging, and teamwork skills through real-world project exposure.</p>
+        </div>
     </div>
 </section>
 
-<section id="about" class="about-section">
-    <h2>About Me</h2>
-    <p>I am deeply passionate about technology and problem-solving. My journey in tech has been shaped by curiosity, continuous learning, and a commitment to building meaningful solutions.
-
-        From Student to Tech Enthusiast
-        While pursuing my BCA, I went beyond academics and completed the O Level course in Information Technology from NIELIT (National Institute of Electronics & Information Technology), strengthening my technical foundation. Now, as an MCA (1st Year) student, I am deepening my expertise in C++, Data Structures & Algorithms, and Full Stack Development, preparing myself to contribute to real-world innovations.
-        
-        Industry Experience
-        I worked as a Full Stack Developer Intern at BWJ Tech Solution, where I gained hands-on experience in building scalable applications, problem-solving, and working in a fast-paced development environment. This internship enhanced my ability to write clean, efficient code and collaborate effectively in a team setting.
-        
-        Mission: Growth, Innovation & Impact
-        I am actively seeking a Software Engineer role where I can apply my skills, learn continuously, and contribute to meaningful projects. My ultimate ambition is to work at Microsoft, creating technology that makes a difference.</p>
+<section id="certifications" class="container py-5">
+    <h2 class="text-center mb-4">Certifications & Courses</h2>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">O Level (NIELIT)</h5>
+                    <p class="card-text">Certified in IT fundamentals and programming.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">.Net Full Stack Development</h5>
+                    <p class="card-text">From infosys SpringBoard</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="skills" class="skills-section">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML5 & CSS3</li>
-        <li>JavaScript (ES6+)</li>
-        <li>React.js & Node.js</li>
-        <li>PHP & MySQL</li>
-        <li>C++ & DSA</li>
-        <li>Git & GitHub</li>
-    </ul>
+<section id="projects" class="container py-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">RoomMate Finder Web Application</h5>
+                    <p class="card-text">The RoomMate Finder Web Application simplifies the process of connecting individuals looking for shared accommodation. It enables users to set up profiles, define preferences like budget and location, and discover the most compatible matches. With a clean interface and secure data management, the platform provides a seamless experience for finding the right roommate.<a href="#">Click</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">E-Learning Web Application</h5>
+                    <p class="card-text">The E-Learning Web Application provides a digital platform for students to access courses, study materials, and interactive learning modules. It offers features such as user authentication, progress tracking, and responsive design for seamless access across devices. With a focus on simplicity and usability, the application enhances learning by making educational resources easily accessible anytime, anywhere. <a href="#">Click</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <form action="#">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+<!-- ✅ Contact Section -->
+<section id="contact" class="contact-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <form class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </div>
 </section>
 
-<footer class="footer">
+<!-- ✅ Footer -->
+<footer class="footer bg-dark text-white text-center py-3">
     <p>© 2025 Nitish Kumar. All Rights Reserved.</p>
     <div class="social-links">
-        <a href="https://github.com/000Nitish"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/nitish-kumar-106a45244/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/_nitish_yadav_0/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/000Nitish" class="text-white mx-2"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nitish-kumar-106a45244/" class="text-white mx-2"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/_nitish_yadav_0/?next=%2F" class="text-white mx-2"><i class="fa-brands fa-instagram"></i></a>
     </div>
 </footer>
 
+<!-- ✅ Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

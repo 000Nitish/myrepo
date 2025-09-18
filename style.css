@@ -1,183 +1,219 @@
+/* ✅ Reset & Global */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f4f4f4;
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* Navbar */
+/* ✅ Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333;
-    padding: 15px 30px;
-    color: #fff;
+  padding: 12px 0;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.navbar-brand {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
 }
 
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #0dcaf0 !important; /* Light blue hover */
 }
 
-.search-box {
-    display: flex;
-    gap: 5px;
+/* ✅ Search Box (Compact) */
+.navbar form input {
+  width: 180px;
+  border-radius: 30px;
+  padding: 6px 12px;
 }
 
-.search-box input {
-    padding: 5px;
+.navbar form button {
+  border-radius: 30px;
 }
 
-.search-box button {
-    padding: 5px 10px;
-    background-color: #ff5722;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-/* Hero Section */
+/* ✅ Hero Section */
 .hero-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 30px;
-    background-color: #fff;
+  padding: 80px 0;
+  background: #fff;
 }
 
-.hero-content h1 {
-    font-size: 36px;
-    color: #333;
+.hero-section h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
 }
 
-.hero-content h1 span {
-    color: #ff5722;
-}
-
-.hero-content h2 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-.hero-content p {
-    margin: 10px 0 20px;
-    color: #555;
+.hero-section p {
+  font-size: 16px;
+  color: #555;
 }
 
 .btn {
-    padding: 10px 20px;
-    background-color: #ff5722;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff !important;
 }
 
-.hero-image img {
-    width: 200px;
-    border-radius: 50%;
+.btn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
 }
 
-/* Sections */
-section {
-    padding: 50px 30px;
-    background: #fff;
-    margin: 10px 0;
+/* ✅ Circular Profile + Rotating Text */
+.circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
 }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+.profile-img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.about-section p {
-    color: #555;
+.circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  animation: rotateText 15s linear infinite;
+  pointer-events: none;
 }
 
-.skills-section ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    list-style: none;
+.circle-text text {
+  fill: url(#gradient);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
 }
 
-.skills-section li {
-    background-color: #ff5722;
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 5px;
+@keyframes rotateText {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* Contact Section */
-.contact-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    max-width: 500px;
+/* ✅ Section Titles */
+section h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  position: relative;
+  display: inline-block;
 }
 
+section h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ✅ Cards (Skills, Achievements, Experience, etc.) */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card h5, .card h4 {
+  font-weight: 600;
+  color: #222;
+}
+
+/* ✅ Contact Section */
 .contact-section input,
 .contact-section textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #ddd;
 }
 
 .contact-section button {
-    padding: 10px;
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-/* Footer */
+/* ✅ Footer */
 .footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
+  background: #212529;
+  color: #ccc;
+  padding: 20px 0;
+  font-size: 14px;
 }
 
-.social-links a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 18px;
-    text-decoration: none;
+.footer .social-links a {
+  font-size: 18px;
+  margin: 0 8px;
+  transition: color 0.3s ease;
 }
 
-/* Responsive */
+.footer .social-links a:hover {
+  color: #0dcaf0;
+}
+
+/* ✅ Responsive */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    .skills-section ul {
-        flex-direction: column;
-    }
+  .hero-section {
+    text-align: center;
+  }
+
+  .circle-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .circle-text {
+    width: 250px;
+    height: 250px;
+  }
+
+  .navbar form input {
+    width: 100%;
+  }
 }
